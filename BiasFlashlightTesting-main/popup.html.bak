@@ -1,0 +1,36 @@
+
+<html>
+    <h1>
+      <img src = 'Lightbulbwhitelogo.PNG' width = 75px height = 90px>
+    </h1>
+    <h2 class = 'biasDetected'> Bias Detected: </h2>
+    <body>
+	
+	<table> 
+	<tr>
+	<td class = 'biasType'></td>
+	
+	<td class = "gauge">
+		<div class="gauge__body">
+		<div class="gauge__fill"></div>
+		<div class="gauge__cover"></div>
+		</div>
+		</div>
+	</td>
+	</tr>
+	</table>
+	
+		
+			
+			  
+			  
+			
+		
+        <button class="infoButton" type="button">Get more Info (OpenAI)</button>
+        
+        <script src = "popup.js"></script>
+        <link rel = "stylesheet" href = "popup.css">
+        <link rel = "stylesheet" href = "popup.css">
+
+    </body>
+</html>  

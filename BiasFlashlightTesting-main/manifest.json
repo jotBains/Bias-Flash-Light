@@ -1,0 +1,35 @@
+
+{
+    "manifest_version": 2,
+
+    "name": "Bias Flashlight",
+    "manifest_version": 2,
+    "version": "0.1",
+    "description": "Shining Light on our everyday unconscious bias",
+    "icons":
+        {
+            "512": "Lightbulblogo.png",
+            "16" : "Lightbulbwhitelogo.png"
+        },
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "content_scripts": [
+        { 
+        "matches": [ "<all_urls>" ],
+        "js": ["content.js","popup.js"],
+        "css": ["popup.css", "content.css"]
+        }
+    ],
+    "content_security_policy": "script-src 'self' https://cdn.jsdelivr.net; object-src 'self'",
+    "permissions": ["activeTab",
+        "contextMenus",
+        "storage",
+        "tabs",
+        "http://127.0.0.1/"],
+    "browser_action": {
+    "default_icon": "Lightbulblogo.png",
+    "default_popup": "popup.html"
+    }
+
+}
